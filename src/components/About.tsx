@@ -10,11 +10,12 @@ const AboutSection: FunctionComponent = () => {
             We want anything to be <br /> easy with{" "}
             <span className="font-bold">LaslesVPN.</span>
           </h2>
-          <p className="text-xs leading-loose mb-5">
+          <p className="text-xs leading-loose mb-5 text-gray-500">
             Provide a network for all your needs with easy and fun using{" "}
             <span className="font-semibold">LaslesVPN</span> <br /> discover
             interesting features from us
           </p>
+          <button className="text-xs bg-[#F53838] text-white font-Rubik font bold rounded-lg border border-[#F53838] py-3 px-12 mt-6">Get Started</button>
         </div>
         <div>
           <img src={illstration} alt="" />

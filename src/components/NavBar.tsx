@@ -14,11 +14,8 @@ const NavBar: FunctionComponent = () => {
             <img
               src={logo}
               alt=""
-              className="hidden md:w-7 md:inline md:mr-4"
+              className="hidden md:w-15 md:inline md:mr-4"
             />
-            <span aria-hidden="true" className="text-sm md:text-lg">
-              David <strong>K.</strong>
-            </span>
           </a>
           <button
             aria-label="toggle button"
@@ -71,7 +68,7 @@ const NavBar: FunctionComponent = () => {
           <div>
             <a href="#" className="mx-6 font-semibold">Sign in</a>
             <a href="#">
-              <button className=" text-red-600 font-semibold px-6 py-1 border border-red-600 rounded-full">Sign up</button>
+              <button className=" text-[#F53838] font-semibold px-6 py-1 border border-[#F53838] rounded-full hover:bg-[#F53838] hover:text-white">Sign up</button>
             </a>
           </div>
         </nav>
