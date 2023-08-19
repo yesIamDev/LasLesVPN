@@ -1,25 +1,20 @@
-import React from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
-import AboutSection from './components/About';
-import Brand from './components/Brand';
-import Features from './components/Features';
-import PlanCard from './components/Plans';
-import Location from './components/location';
-import Testimonials from './components/Testimonial';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/shared/Layout";
+import Dashboard from "./components/Dashboard";
+import Products from "./components/Products";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <AboutSection />
-      <Brand />
-      <Features />
-      <PlanCard />
-      <Location />
-      <Testimonials />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+            <Route index element={<Dashboard/>}/>
+            <Route path="products" element={<Products/>} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
