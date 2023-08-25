@@ -1,15 +1,12 @@
 import {
-  HiOutlineCube,
   HiOutlineViewGrid,
-  HiOutlineShoppingCart,
-  HiOutlineUser,
-  HiOutlineDocumentText,
-  HiOutlineAnnotation,
-  HiOutlineQuestionMarkCircle,
-  HiOutlineCog,
 } from "react-icons/hi";
 
-export const DASHBOARD_SIDEBAR_LINKS = [
+import {CgProfile} from "react-icons/cg"
+import {GrTransaction} from "react-icons/gr"
+import {BiArrowFromLeft, BiArrowFromRight} from "react-icons/bi"
+
+export const SIDEBAR_LINKS = [
   {
     key: "dashboard",
     label: "Dashboard",
@@ -17,48 +14,28 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     icon: <HiOutlineViewGrid />,
   },
   {
-    key: "products",
-    label: "Products",
-    path: "/products",
-    icon: <HiOutlineCube />,
+    key: "clients",
+    label: "Clients",
+    path: "/clients",
+    icon: <CgProfile />,
   },
   {
-    key: "orders",
-    label: "Orders",
-    path: "/orders",
-    icon: <HiOutlineShoppingCart />,
+    key: "retraits",
+    label: "Retraits",
+    path: "/retraits",
+    icon: <BiArrowFromRight />,
   },
   {
-    key: "customers",
-    label: "Customers",
-    path: "/customers",
-    icon: <HiOutlineUser />,
+    key: "depots",
+    label: "Depots",
+    path: "/depots",
+    icon: <BiArrowFromLeft />,
   },
   {
     key: "transactions",
     label: "Transactions",
     path: "/transactions",
-    icon: <HiOutlineDocumentText />,
-  },
-  {
-    key: "messages",
-    label: "Messages",
-    path: "/messages",
-    icon: <HiOutlineAnnotation />,
+    icon: <GrTransaction />,
   },
 ];
 
-export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
-  {
-    key: "settings",
-    label: "Settings",
-    path: "/settings",
-    icon: <HiOutlineCog />,
-  },
-  {
-    key: "support",
-    label: "Support",
-    path: "/support",
-    icon: <HiOutlineQuestionMarkCircle />,
-  },
-];
