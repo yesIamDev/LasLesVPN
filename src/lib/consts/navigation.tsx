@@ -5,6 +5,7 @@ import {
 import {CgProfile} from "react-icons/cg"
 import {GrTransaction} from "react-icons/gr"
 import {BiArrowFromLeft, BiArrowFromRight} from "react-icons/bi"
+import {BsFolder} from 'react-icons/bs'
 
 export const SIDEBAR_LINKS = [
   {
@@ -18,6 +19,12 @@ export const SIDEBAR_LINKS = [
     label: "Clients",
     path: "/clients",
     icon: <CgProfile />,
+  },
+  {
+    key:"comptes",
+    label: "Comptes",
+    path:"/comptes",
+    icon: <BsFolder/>
   },
   {
     key: "retraits",
